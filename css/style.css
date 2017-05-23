@@ -8,15 +8,6 @@ body
 }
 @media (min-width: 768px)
 {
-	img {
-		width: 500px;
-		height: 500px;
- 		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
- 	 	border-style: solid;
- 	 	border-width: 5px;
-  		border-color: black;
-	}
-
 
 	.row1
 	{
@@ -32,29 +23,40 @@ body
 	}
 	.rocktaves
 	{	
+		width: 100%;
 		margin-left: 0%;
+		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
 	}
 
 	.humor
 	{
 		margin-left: 0%;
+		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
 	}
 
 	.street
 	{
 		margin-left: 0%;
+		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
 	}
 
 	.pitch
 	{
 		margin-left: 70%;
 		margin-top: -7%;	
+		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
 	}
 
 	.rap
 	{
 		margin-left: 0%;
 		margin-top: -7%;
+		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
+	}
+	img
+	{
+		height: inherit;
+		width: inherit;
 	}
 }
 @media only screen and (max-width: 768px)
