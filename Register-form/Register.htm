@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Registration </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="stylereg.css">
+		<link rel="stylesheet" href="resets.css">
+		<!--<link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">-->
+		<!--<link href="https://fonts.googleapis.com/css?family=Handlee|Passion+One:700" rel="stylesheet">-->
+		<link href="https://fonts.googleapis.com/css?family=Oswald|Passion+One:700" rel="stylesheet">
+	</head>
+	<body>
+	<div id="light-box">
+		<div id="register_here">
+			<div id="cont1">
+				<div id="cont1-1"> Register </div>
+			</div>
+			<div id="cont2">
+				<form id="register-form">
+             		 <div class="input-field">
+               			 <label>Name</label>
+               			 <input name="name" type="text" placeholder="Name" required="" />
+             		 </div>
+             		 <div class="input-field">
+               			 <label>College</label>
+               			 <input name="college" type="text" placeholder="College Name" required="" />
+              		</div>
+             		 <div class="input-field">
+             			<label>Phone</label>
+              			<input name="phone" type="number" placeholder="+91-" required="" min="1000000000" max="9999999999" />
+              		</div>
+            		<div class="input-field">
+               			 <label>Gender</label>
+               			 <div class="gender-wrap">
+                 		 	<input name="gender" type="radio" value="M" required />
+                 			 <label>Male</label>
+                  			<input name="gender" type="radio" value="F" />
+                  			<label>Female</label>
+               			</div>
+             		 </div>
+              		<div class="input-field">
+               			 <label>Email</label>
+
+               			 <input name="email" type="email" placeholder="abc@gmail.com"required="" />
+             		 </div>
+             		 <div class="input-field">
+             		 	<label> Event</label>
+             		 	<select>
+             		 		<option value="Rap Wars">Rap Wars </option>
+             		 		<option value="Pitch Perfect"> Pitch Perfect</option>
+             		 		<option value="Event3"> Street Dance</option>
+             		 		<!--<option value="Event4"> Event 4</option>-->
+             		 	</select>
+             		 </div>
+
+              		<div class="button-field">
+               			 <button class="pay" id="register-pay">
+               			 	<a> PROCEED TO PAY </a> 
+               			 </button>
+             		 </div>
+            		 
+            </form>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
