@@ -156,3 +156,8 @@ button:active {
   transform: translateY(3px);
 }
 
+
+.gender-wrap{
+	
+	display: inline-block;
+}
