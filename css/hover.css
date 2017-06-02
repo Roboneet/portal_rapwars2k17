@@ -33,11 +33,12 @@
 	padding: 10px;
 	margin: 0 auto;
 	
-
+	text-decoration: none;
+	color: #fff;
 	cursor: pointer;
 	position: relative;
 	text-align: center;
-	transition: all 1s linear;
+	transition: all .5s linear;
 }
 
 .overlay a:hover{

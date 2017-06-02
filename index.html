@@ -5,36 +5,305 @@
 <head>
 	<title>Oassis 2k17</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/resets.css">
 	<link rel="stylesheet" href="css/animate .css">
 	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="css/stylereg.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Passion+One:700" rel="stylesheet">
 </head>
 <body>
 <div class ="events">
 <div class ="row1"><!-- <script src="js/wow.min.js"></script> -->
 	<div class="rocktaves wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 	 	<img src="resized/rocktaves.jpg" alt="rocktaves">
-	 	<div class="hidden"><a>Register</a></div>
+	 	<div class="hidden"><a href="#" data="rocktaves" class="register">Register</a></div>
 	 </div>
 	 <div class="humor wow fadeIn" data-wow-delay=".2s" data-wow-duration="2s">
 	 	<img src="resized/humor_fest.jpg" alt="humor fest">
-	 	<div class="hidden"><a>Register</a></div>
+	 	<div class="hidden"><a href="#" data="humor" class="register">Register</a></div>
 	 </div>
 	 <div class="street wow fadeIn" data-wow-delay=".5s" data-wow-duration="1.5s">
 	 	<img src="resized/streetdance.jpg" alt="street dance">
-	 	<div class="hidden"><a>Register</a></div>
+	 	<div class="hidden"><a href="#" data="street"  class="register">Register</a></div>
 	 </div>
 </div>
 <br/>
 <div class ="row2">
 	 <div class="pitch wow fadeIn" data-wow-delay=".3s" data-wow-duration="1.8s">
 	 	<img src="resized/pitch_perfect.jpg" alt="pitch perfect">
-	 	<div class="hidden"><a>Register</a></div>
+	 	<div class="hidden"><a href="#" data="pitch"  class="register">Register</a></div>
 	 </div>
 	 <div class="rap wow fadeIn" data-wow-delay=".7s" data-wow-duration="1.5s">
 	 	<img src="resized/rap_wars.jpg" alt="rap wars">
-	 	<div class="hidden"><a>Register</a></div>
+	 	<div class="hidden"><a href="#" data="rap"  class="register">Register</a></div>
 	 </div>
 </div>
+</div>
+<div class="backdrop">
+		<div class="close">X</div>
+		<div class="register_here" id="rocktaves">
+			<div class="cont1">
+				<div class="cont1-1"> Register </div>
+			</div>
+			<div class="cont2">
+				<form class="register-form">
+             		 <div class="input-field">
+               			 <label>Name</label>
+               			 <input name="name" type="text" placeholder="Name" required="" />
+             		 </div>
+             		 <div class="input-field">
+               			 <label>City</label>
+               			 <input name="city" type="text" placeholder="City Name" required="" />
+              		</div>
+             		 <div class="input-field">
+             			<label>Phone</label>
+              			<input name="phone" type="text" placeholder="+91-" required="" min="1000000000" max="9999999999"/>
+              		</div>
+            		<div class="input-field">
+               			 <label>Gender</label>
+               			 <div class="gender-wrap">
+                 		 	<input name="gender" type="radio" value="M" />
+                 			 <label>Male</label>
+                  			<input name="gender" type="radio" value="F" />
+                  			<label>Female</label>
+               			</div>
+             		 </div>
+              		<div class="input-field">
+               			 <label>Email</label>
+
+               			 <input name="email" type="email" placeholder="abc@gmail.com"required="" />
+             		 </div>
+             		 <div class="input-field">
+             		 	<label> Event</label>
+             		 	<select>
+             		 		<option value="Rocktaves">Rocktaves </option>
+             		 	</select>
+             		 </div>
+
+              		<div class="button-field">
+               			 <button class="pay register-pay">
+               			 	<a> PROCEED </a> 
+               			 </button>
+             		 </div>
+            		 
+            </form>
+			</div>
+		</div>
+
+		<div class="register_here" id="pitch">
+			<div class="cont1">
+				<div class="cont1-1"> Register </div>
+			</div>
+			<div class="cont2">
+				<form class="register-form">
+                 <div class="input-field">
+                     <label>Group Lead</label>
+                     <input name="group lead" type="text" placeholder="Group Leader" required="" />
+                 </div>
+                 <div class="input-field">
+                     <label>Group Members</label>
+                     <input name="group memb" type="text" placeholder="Group Members" required="" />
+                 </div>
+                 <div class="input-field">
+                     <label>City</label>
+                     <select>
+                       <option value="Mumbai" selected>Mumbai</option>
+                       <option value="Kolkata">Kolkata</option>
+                     </select>
+                 </div>
+                 <div class="input-field">
+                     <label>College</label>
+                     <input name="college" type="text" placeholder="College Name" required="" />
+                  </div>
+                 <div class="input-field">
+                  <label>Phone</label>
+                    <input name="phone" type="text" placeholder="+91-" required="" min="1000000000" max="9999999999"/>
+                  </div>
+                  <div class="input-field">
+                     <label>Email</label>
+
+                     <input name="email" type="email" placeholder="abc@gmail.com"required="" />
+                 </div>
+             		 <div class="input-field">
+             		 	<label> Event</label>
+             		 	<select>
+             		 		<option value="Pitch Perfect">Pitch Perfect </option>
+             		 	</select>
+             		 </div>
+
+              		<div class="button-field">
+               			 <button class="pay register-pay">
+               			 	<a> PROCEED TO PAY </a> 
+               			 </button>
+             		 </div>
+            		 
+            </form>
+			</div>
+		</div>
+
+		<div class="register_here" id="rap">
+			<div class="cont1">
+				<div class="cont1-1"> Register </div>
+			</div>
+			<div class="cont2">
+				<form class="register-form">
+             		 <div class="input-field">
+               			 <label>Name</label>
+               			 <input name="name" type="text" placeholder="Name" required="" />
+             		 </div>
+             		 <div class="input-field">
+               			 <label>City</label>
+               			 <input name="city" type="text" placeholder="City Name" required="" />
+              		</div>
+             		 <div class="input-field">
+             			<label>Phone</label>
+              			<input name="phone" type="text" placeholder="+91-" required="" min="1000000000" max="9999999999"/>
+              		</div>
+            		<div class="input-field">
+               			 <label>Gender</label>
+               			 <div class="gender-wrap">
+                 		 	<input name="gender" type="radio" value="M" />
+                 			 <label>Male</label>
+                  			<input name="gender" type="radio" value="F" />
+                  			<label>Female</label>
+               			</div>
+             		 </div>
+              		<div class="input-field">
+               			 <label>Email</label>
+
+               			 <input name="email" type="email" placeholder="abc@gmail.com"required="" />
+             		 </div>
+             		 <div class="input-field">
+             		 	<label> Event</label>
+             		 	<select>
+             		 		<option value="Rapwars">Rapwars </option>
+             		 	</select>
+             		 </div>
+
+              		<div class="button-field">
+               			 <button class="pay register-pay">
+               			 	<a> PROCEED </a> 
+               			 </button>
+             		 </div>
+            		 
+            </form>
+			</div>
+		</div>
+		<div class="register_here" id="street">
+			<div class="cont1">
+				<div class="cont1-1"> Register </div>
+			</div>
+			<div class="cont2">
+				<form class="register-form">
+             		 <div class="input-field">
+               			 <label>Group Lead</label>
+               			 <input name="group lead" type="text" placeholder="Group Leader" required="" />
+             		 </div>
+                 <div class="input-field">
+                     <label>Group Members</label>
+                     <input name="group memb" type="text" placeholder="Group Members" required="" />
+                 </div>
+                 <div class="input-field">
+                     <label>City</label>
+                     <select>
+                       <option value="Chandigarh" selected>Chandigarh</option>
+                       <option value="Indore">Indore</option>
+                       <option value="Mumbai">Mumbai</option>
+                       <option value="Kolkata">Kolkata</option>
+                     </select>
+                 </div>
+             		 <div class="input-field">
+               			 <label>College</label>
+               			 <input name="college" type="text" placeholder="College Name" required="" />
+              		</div>
+             		 <div class="input-field">
+             			<label>Phone</label>
+              			<input name="phone" type="text" placeholder="+91-" required="" min="1000000000" max="9999999999"/>
+              		</div>
+            	<!--	<div class="input-field">
+               			 <label>Gender</label>
+               			 <div class="gender-wrap">
+                 		 	<input name="gender" type="radio" value="M" />
+                 			 <label>Male</label>
+                  			<input name="gender" type="radio" value="F" />
+                  			<label>Female</label>
+               			</div>
+             		 </div>-->
+              		<div class="input-field">
+               			 <label>Email</label>
+
+               			 <input name="email" type="email" placeholder="abc@gmail.com"required="" />
+             		 </div>
+             		 <div class="input-field">
+             		 	<label> Event</label>
+             		 	<select>
+             		 		<option value="Street Dance">Street Dance </option>
+             		 	</select>
+             		 </div>
+
+              		<div class="button-field">
+               			 <button class="pay  register-pay">
+               			 	<a> PROCEED TO PAY </a> 
+               			 </button>
+             		 </div>
+            		 
+            </form>
+			</div>
+		</div>
+
+		<div class="register_here" id="humor">
+			<div class="cont1">
+				<div class="cont1-1"> Register </div>
+			</div>
+			<div class="cont2">
+				<form class="register-form">
+             		 <div class="input-field">
+               			 <label>Name</label>
+               			 <input name="name" type="text" placeholder="Name" required="" />
+             		 </div>
+             		 <div class="input-field">
+               			 <label>City</label>
+               			 <select>
+                      <option value="Bangalore" selected> Bangalore</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Mumbai">Mumbai</option>  
+                     </select>
+              		</div>
+             		 <div class="input-field">
+             			<label>Phone</label>
+              			<input name="phone" type="text" placeholder="+91-" required="" min="1000000000" max="9999999999"/>
+              		</div>
+            		<div class="input-field">
+               			 <label>Gender</label>
+               			 <div class="gender-wrap">
+                 		 	<input name="gender" type="radio" value="M" />
+                 			 <label>Male</label>
+                  			<input name="gender" type="radio" value="F" />
+                  			<label>Female</label>
+               			</div>
+             		 </div>
+              		<div class="input-field">
+               			 <label>Email</label>
+
+               			 <input name="email" type="email" placeholder="abc@gmail.com"required="" />
+             		 </div>
+             		 <div class="input-field">
+             		 	<label> Event</label>
+             		 	<select>
+             		 		<option value="Standup Soapbox">Standup Soapbox </option>
+             		 	</select>
+             		 </div>
+
+              		<div class="button-field">
+               			 <button class="pay register-pay">
+               			 	<a> PROCEED TO PAY </a> 
+               			 </button>
+             		 </div>
+            		 
+            </form>
+			</div>
+		</div>
 </div>
 <script src="./wow.min.js"></script>
               <script>
@@ -43,4 +312,7 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/hover.js"></script>
+<script src="js/lightbox.js"></script>
 </body>
+
+</html>
