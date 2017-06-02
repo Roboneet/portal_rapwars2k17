@@ -41,13 +41,14 @@
 </div>
 </div>
 <div class="backdrop">
+		<div class="msg"></div>
 		<div class="close">X</div>
 		<div class="register_here" id="rocktaves">
 			<div class="cont1">
 				<div class="cont1-1"> Register </div>
 			</div>
 			<div class="cont2">
-				<form class="register-form">
+				<form class="register-form" id="form0"  method="POST">
              		 <div class="input-field">
                			 <label>Name</label>
                			 <input name="name" type="text" placeholder="Name" required="" />
@@ -82,8 +83,8 @@
              		 </div>
 
               		<div class="button-field">
-               			 <button class="pay register-pay">
-               			 	<a> PROCEED </a> 
+               			 <button class="pay register-pay submit"  index="0">
+               			 	<a href="javascript:void(0)"> PROCEED </a> 
                			 </button>
              		 </div>
             		 
@@ -96,7 +97,7 @@
 				<div class="cont1-1"> Register </div>
 			</div>
 			<div class="cont2">
-				<form class="register-form">
+				<form class="register-form" id="form1" method="POST">
                  <div class="input-field">
                      <label>Group Lead</label>
                      <input name="group lead" type="text" placeholder="Group Leader" required="" />
@@ -133,8 +134,8 @@
              		 </div>
 
               		<div class="button-field">
-               			 <button class="pay register-pay">
-               			 	<a> PROCEED TO PAY </a> 
+               			 <button class="pay register-pay submit"  index="1">
+               			 	<a href="javascript:void(0)"> PROCEED TO PAY </a> 
                			 </button>
              		 </div>
             		 
@@ -147,7 +148,7 @@
 				<div class="cont1-1"> Register </div>
 			</div>
 			<div class="cont2">
-				<form class="register-form">
+				<form class="register-form" id="form2" method="POST">
              		 <div class="input-field">
                			 <label>Name</label>
                			 <input name="name" type="text" placeholder="Name" required="" />
@@ -182,8 +183,8 @@
              		 </div>
 
               		<div class="button-field">
-               			 <button class="pay register-pay">
-               			 	<a> PROCEED </a> 
+               			 <button  class="pay register-pay submit"  index="2">
+               			 	<a href="javascript:void(0)"> PROCEED </a> 
                			 </button>
              		 </div>
             		 
@@ -195,7 +196,7 @@
 				<div class="cont1-1"> Register </div>
 			</div>
 			<div class="cont2">
-				<form class="register-form">
+				<form class="register-form" id="form3" method="POST">
              		 <div class="input-field">
                			 <label>Group Lead</label>
                			 <input name="group lead" type="text" placeholder="Group Leader" required="" />
@@ -243,8 +244,8 @@
              		 </div>
 
               		<div class="button-field">
-               			 <button class="pay  register-pay">
-               			 	<a> PROCEED TO PAY </a> 
+               			 <button  class="pay register-pay submit"  index="3">
+               			 	<a href="javascript:void(0)"> PROCEED TO PAY </a> 
                			 </button>
              		 </div>
             		 
@@ -257,7 +258,7 @@
 				<div class="cont1-1"> Register </div>
 			</div>
 			<div class="cont2">
-				<form class="register-form">
+				<form class="register-form" id="form4" method="POST">
              		 <div class="input-field">
                			 <label>Name</label>
                			 <input name="name" type="text" placeholder="Name" required="" />
@@ -296,14 +297,15 @@
              		 </div>
 
               		<div class="button-field">
-               			 <button class="pay register-pay">
-               			 	<a> PROCEED TO PAY </a> 
+               			 <button  class="pay register-pay submit"  index="4">
+               			 	<a href="javascript:void(0)"> PROCEED TO PAY </a> 
                			 </button>
              		 </div>
             		 
             </form>
 			</div>
 		</div>
+
 </div>
 <script src="./wow.min.js"></script>
               <script>
