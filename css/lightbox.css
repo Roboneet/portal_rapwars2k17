@@ -8,9 +8,13 @@
 	display:none;
 }
 
-#rocktaves,
-#pitch,#rap,
-#street,#humor{display:none;}
+#rocktaves_register,
+#pitch_register,#rap_register,
+#street_register,#humor_register,
+#pitch_info,#humor_info,
+#street_info{
+	display:none;
+}
 
 .close{
 	color: #fff;
