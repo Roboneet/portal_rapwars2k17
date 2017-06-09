@@ -1,0 +1,130 @@
+
+.mirage{
+	height: 350px;
+	width: 700px;
+	display: block;
+	margin: auto;
+}
+
+.oasislogo{
+	float: right;
+	height: 100px;
+	width: 300px;
+	margin-right: 0;
+}
+.events
+{
+	position: relative;
+}
+body
+{
+	background-image: url("../img/background.jpg");
+}
+@media (min-width: 768px)
+{
+
+	.row1
+	{
+		display: inline-flex;
+		margin-top: 5%;
+		margin-left: 20%;
+	}
+
+	.row2
+	{
+		display: inline-flex;
+		margin-left:3.1%;
+	}
+	.rocktaves
+	{	
+		width: 100%;
+		margin-left: 0%;
+		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
+	}
+
+	.humor
+	{
+		margin-left: 0%;
+		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
+	}
+
+	.street
+	{
+		margin-left: 0%;
+		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
+	}
+
+	.pitch
+	{
+		margin-left: 70%;
+		margin-top: -7%;	
+		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
+	}
+
+	.rap
+	{
+		margin-left: 0%;
+		margin-top: -7%;
+		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
+	}
+	img
+	{
+		height: inherit;
+		width: inherit;
+	}
+}
+@media only screen and (max-width: 768px)
+{
+	.events
+	{
+		margin-left: 25%;
+	}
+	img
+	{
+		width: 50%;
+		height: 40%;
+	}
+  .events{
+    display: block;
+  }
+}
+
+
+.bu-pitch
+{
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.bu-rocktaves
+{
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.bu-humor
+{
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.bu-street
+{
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.bu-rap
+{
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.bu button
+{
+background: rgb(48,48,48);
+  border-radius: 4px;
+  box-shadow: 0 5px 0 rgb(84,84,84);
+  font : inherit;
+  cursor: pointer;
+}
