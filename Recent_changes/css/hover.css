@@ -1,0 +1,46 @@
+.shade{
+	filter: saturate(.1);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+.hidden{
+	display: none;
+}
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right:0;
+	background: transparent;
+	text-transform: uppercase;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	font-family:'Lato', sans-serif;
+}
+.rocktaves,
+.humor,
+.street,
+.pitch,
+.rap{
+	position: relative;
+}
+.overlay a{
+	width: 130px;
+	padding: 10px;
+	margin: 0 auto;
+	
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	text-align: center;
+	transition: all .5s linear;
+}
+
+.overlay a:hover{
+	border-bottom: 1px solid #fff;
+}
