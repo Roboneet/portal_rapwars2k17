@@ -29,7 +29,7 @@ body{
 .register_here{
 	width: 50%;
 	height: 600px;
-	background: white;
+	background: rgba(173,216,230,0.9);
 	border: 10px solid rgb(48,48,48);
 	border-radius: 10px;
 	border-top-left-radius: 80px;
