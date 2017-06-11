@@ -129,3 +129,21 @@ background: rgb(48,48,48);
   font : inherit;
   cursor: pointer;
 }
+
+.container{
+	width: 100vw;
+	text-align:center;
+}
+
+@media (min-width: 768px)
+{
+
+	.row1{
+		margin-left:0;
+	}
+
+	.pitch{
+		margin-left:0;
+	}
+}
+
