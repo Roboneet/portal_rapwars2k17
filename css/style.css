@@ -1,3 +1,11 @@
+#rof
+{
+
+	height: 100%;
+	width: 50%; 
+}
+
+
 .events
 {
 	position: relative;
@@ -5,22 +13,36 @@
 body
 {
 	background-image: url("../img/background.jpg");
-	overflow-x: hidden;
+	overflow-x: auto;
+}
+
+@media (min-width: 980px)
+{
+	body
+	{
+		overflow-x: hidden;
+	}
 }
 @media (min-width: 768px)
 {
 
+	.logo
+	{
+		height: 25%;
+		width: 100%;
+		margin-left: 22em;	
+	}
 	.row1
 	{
 		display: inline-flex;
-		margin-top: 8.25em;
-		margin-left: 15.2em;
+		margin-top: 0.25em;
+		margin-left: 20.2em;
 	}
 
 	.row2
 	{
 		display: inline-flex;
-		margin-left:2.1em;
+		margin-left:7.1em;
 	}
 	.rocktaves
 	{	
@@ -54,14 +76,18 @@ body
 		margin-top: -7%;
 		clip-path: polygon(50%	0%,7%	25%,7%	75%,50%	100%,93%	75%,93%	25%);
 	}
-	img
+	/*img
 	{
 		height: inherit;
 		width: inherit;
-	}
+	}*/
 }
 @media only screen and (max-width: 768px)
 {
+	.logo
+{
+	margin-left: 20%;
+}
 	.events
 	{
 		margin-left: 25%;
