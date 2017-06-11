@@ -148,3 +148,10 @@ background: rgb(48,48,48);
 	}
 }
 
+@media (max-width: 768px){
+	.events{
+		margin-left:0;
+	}
+}
+
+
