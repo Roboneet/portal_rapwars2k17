@@ -25,7 +25,7 @@ $(document).ready(function(){
 		event.preventDefault();	
 		var form_number = $(this).attr('index');
 		data_string = $('#form'+form_number).serialize();
-		// console.log(data)
+		// console.log(data_string)
 		// console.log(JSON.parse(data));
 
 		data_JSON = {};
@@ -37,7 +37,7 @@ $(document).ready(function(){
 			data_JSON[key] = value;
 		});
 		
-		console.log(data_JSON);
+		// console.log(data_JSON);
 
 
 		function getCookie(name) {
@@ -59,6 +59,7 @@ $(document).ready(function(){
 		var csrftoken = getCookie('csrftoken');
 
 		data_JSON.csrfmiddlewaretoken = csrftoken;
+		data_JSON.form_id = form_number;
 
 
 		$.ajax({
