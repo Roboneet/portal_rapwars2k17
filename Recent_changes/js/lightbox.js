@@ -39,8 +39,30 @@ $(document).ready(function(){
 		
 		console.log(data_JSON);
 
+
+		function getCookie(name) {
+		       var cookieValue = null;
+		       if (document.cookie && document.cookie != '') {
+		         var cookies = document.cookie.split(';');
+		         for (var i = 0; i < cookies.length; i++) {
+		         var cookie = jQuery.trim(cookies[i]);
+		         // Does this cookie string begin with the name we want?
+		         if (cookie.substring(0, name.length + 1) == (name + '=')) {
+		             cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+		             break;
+		          }
+		     }
+		   }
+		 return cookieValue;
+		}
+
+		var csrftoken = getCookie('csrftoken');
+
+		data_JSON.csrfmiddlewaretoken = csrftoken;
+
+
 		$.ajax({
-			url:'/',
+			url:window.location.href,
 			type: 'POST',
 			data: data_JSON,
 			success: info_dom,
@@ -48,13 +70,26 @@ $(document).ready(function(){
 		});
 
 		function info_dom(json){
-			$('.msg').text('form submitted');
+			var message;
+			if(json.status == 1){
+      			message = 'Hi '+json['email'] +'!.' + ' You have entered name:'+      json['name'];
+   			}
+     		 else if(json.status == 2){
+     		   message = 'Enter a valid phone number.'
+    		}
+		      else if(json.status == 3){
+		        message = 'Enter a valid email address.'
+		    }
+		    else{
+		      message = 'Email already registered'
+		    }
+			$('.msg').text(message);
 			$('.msg').fadeIn();
 
 		}
 	
 		function info_console(xhr, error_message , error_code){
-			console.log(error_code + ' ' + error_message);
+			console.log(xhr.status + ' ' + xhr.response);
 		};
 	});
 });
