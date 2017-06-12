@@ -1,11 +1,13 @@
 $(document).ready(function(){
-	var open = 'rocktaves_register';
+	var open = null;
 	$('.register-button').click(function(){
-		// $('.backdrop').fadeIn();
+		
 		$('#'+open).fadeOut();
+
 		var event = $(this).attr('data')
 		var k = setTimeout(function(){
 			// console.log($('#'+event+'_register'));
+			$('.backdrop').fadeIn();
 			$('#'+event+'_register').fadeIn();},500);
 
 		open = $(this).attr('data')+'_register';
@@ -21,9 +23,19 @@ $(document).ready(function(){
 	$('.close').click(function(){
 		$('#'+open).fadeOut();
 		$('.backdrop').fadeOut();
+		open = null;
 	});
 
-	$('.backdrop').click(function(){$('.backdrop').fadeOut();})
+	$('.backdrop').click(function(){
+		$('.backdrop').fadeOut();
+	})
+
+
+
+
+
+
+
 
 	$('.submit').click(function(event){
 		event.preventDefault();	
