@@ -1,10 +1,14 @@
 $(document).ready(function(){
 	var open = 'rocktaves_register';
-	$('.register').click(function(){
-		$('.backdrop').fadeIn();
+	$('.register-button').click(function(){
+		// $('.backdrop').fadeIn();
+		$('#'+open).fadeOut();
+		var event = $(this).attr('data')
+		var k = setTimeout(function(){
+			// console.log($('#'+event+'_register'));
+			$('#'+event+'_register').fadeIn();},500);
 
-		$('#'+$(this).parent().attr('data')+'_register').fadeIn();
-		open = $(this).parent().attr('data')+'_register';
+		open = $(this).attr('data')+'_register';
 	});
 
 	$('.info').click(function(){

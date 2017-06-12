@@ -8,6 +8,7 @@ $(document).ready(function(){
 		$(this).addClass('shade');
 		$(this).next().removeClass('hidden');
 		$(this).next().addClass('overlay');
+		$('.overlay').animate({'backgroundColor': '#212121'})
 		
 		
 	});
