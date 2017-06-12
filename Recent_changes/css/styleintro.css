@@ -17,6 +17,7 @@
 	margin: auto;
 	margin-top: 80px;
 	overflow:auto;
+	overflow-x: hidden;
 }
 
 .intro .cont1{
