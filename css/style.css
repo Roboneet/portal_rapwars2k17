@@ -1,7 +1,20 @@
+<<<<<<< HEAD
+=======
+img {
+	width: 500px;
+	height: 500px;
+  clip-path: polygon(75% 7%,25% 7%,0% 50%,25%	93%,75%	93%,100% 50%);
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+>>>>>>> master
 .events
 {
 	position: relative;
 }
+<<<<<<< HEAD
 body
 {
 	background-image: url("../img/background.jpg");
@@ -113,4 +126,45 @@ background: rgb(48,48,48);
   box-shadow: 0 5px 0 rgb(84,84,84);
   font : inherit;
   cursor: pointer;
+=======
+
+.row1
+{
+	display: inline-flex;
+	margin-top: 5%;
+	margin-left: 20%;
+}
+
+.row2
+{
+	display: inline-flex;
+	margin-left:2.5%;
+}
+.rocktaves
+{
+
+	margin-left: 0%;
+}
+
+.humor
+{
+	margin-left: 0%;
+}
+
+.street
+{
+	margin-left: 0%;
+}
+
+.pitch
+{
+	margin-left: 70%;
+	margin-top: -7%;
+}
+
+.rap
+{
+	margin-left: 0%;
+	margin-top: -7%;
+>>>>>>> master
 }

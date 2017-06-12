@@ -15,6 +15,10 @@ body{
 //	display: none;
 
 	/** Position and style */
+<<<<<<< HEAD
+=======
+	position: fixed;
+>>>>>>> master
 	z-index: 999;
 	width: 100%;
 	height: 100%;
@@ -35,6 +39,10 @@ body{
 	border-bottom-right-radius: 80px;
 	display: block;
 	margin: auto;
+<<<<<<< HEAD
+=======
+	margin-top: 100px;
+>>>>>>> master
 }
 
 #cont1{
@@ -75,7 +83,12 @@ label {
 	//font-family: 'Handlee', cursive;
 	font-family: 'Oswald', sans-serif;
 }
+<<<<<<< HEAD
 input[type=text], input[type=email],input[type=number], select{
+=======
+
+input[type=text], input[type=email], select{
+>>>>>>> master
 	width: 50%;
 	padding: 5px;
 	border-radius: 5px;
@@ -93,8 +106,12 @@ input[type=radio]{
 }
 
 .button-field{
+<<<<<<< HEAD
 	margin-top: 10px;
 	margin-right: 23px;
+=======
+	margin-top: 20px;
+>>>>>>> master
 }
 /*
 button{
