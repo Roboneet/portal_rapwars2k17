@@ -1,0 +1,42 @@
+.backdrop{
+	position: fixed;
+	top: 0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: rgba(0,0,0,0.3);
+	display:none;
+}
+
+#rocktaves_register,
+#pitch_register,#rap_register,
+#street_register,#humor_register,
+#pitch_info,#humor_info,
+#rocktaves_info,
+#rap_info,
+#street_info{
+	display:none;
+}
+
+.close{
+	color: #fff;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;	
+}
+
+.msg{
+	position: relative;
+	color: #fff;
+	background: rgba(255,255,255,.3);
+	font-size: 22px;
+	text-align: center;
+	margin: 0 auto;
+	display: none;
+}
