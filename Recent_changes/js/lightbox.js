@@ -23,7 +23,7 @@ $(document).ready(function(){
 		$('.backdrop').fadeOut();
 	});
 
-
+	$('.backdrop').click(function(){$('.backdrop').fadeOut();})
 
 	$('.submit').click(function(event){
 		event.preventDefault();	
