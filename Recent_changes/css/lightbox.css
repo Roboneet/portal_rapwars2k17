@@ -19,11 +19,11 @@
 }
 
 .close{
-	color: #fff;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	cursor: pointer;
+	color: #000;
+ 	margin-top: 10px;
+ 	margin-right: 15px;
+ 	float: right;
+ 	font-size: 2em;
 }
 
 a{
