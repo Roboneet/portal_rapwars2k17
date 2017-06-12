@@ -22,7 +22,7 @@
 
 .intro .cont1{
 	display: inline-block;
-	width: 100%;
+	width: auto;
 	height: 100px;
 }
 
@@ -44,6 +44,7 @@
 	font-family: 'Architects Daughter', cursive;
 	
 	font-size: 1.2em;
+	clear:both;
 }
 
 .intro .heading{
