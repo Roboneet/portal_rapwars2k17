@@ -25,12 +25,17 @@ $(document).ready(function(){
 		$('.backdrop').fadeOut();
 	});
 
-	$('.backdrop').click(function(){
-		$('.backdrop').fadeOut();
-		$('#'+open).fadeOut();
-	})
+	// $('.backdrop').click(function(){
+	// 		$('.backdrop').fadeOut();
+	// 		$('#'+open).fadeOut();
+	// })
 
-
+	$(document).on('click', function(event) {
+    	if ($(event.target).has('#'+open).length) {
+        	$('.backdrop').fadeOut();
+			$('#'+open).fadeOut();
+    	}
+	});
 
 
 
