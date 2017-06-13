@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var open = null;
+	var open = 'rocktaves';
 	$('.register-button').click(function(){
 		
 		$('#'+open).fadeOut();
@@ -23,11 +23,11 @@ $(document).ready(function(){
 	$('.close').click(function(){
 		$('#'+open).fadeOut();
 		$('.backdrop').fadeOut();
-		open = null;
 	});
 
 	$('.backdrop').click(function(){
 		$('.backdrop').fadeOut();
+		$('#'+open).fadeOut();
 	})
 
 
