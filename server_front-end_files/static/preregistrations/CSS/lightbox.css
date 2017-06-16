@@ -1,0 +1,80 @@
+.backdrop{
+	position: fixed;
+	top: 0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: rgba(0,0,0,0.7);
+	display:none;
+	overflow-y: auto;
+}
+
+#rocktaves_register,
+#pitch_register,#rap_register,
+#street_register,#humor_register,
+#pitch_info,#humor_info,
+#rocktaves_info,
+#rap_info,
+#street_info,
+#contacts_info,
+.youtube-video-container{
+	display:none;
+}
+
+.close{
+	color: #000;
+ 	margin-top: 20px;
+ 	font-weight: 100;
+ 	margin-right: 15px;
+ 	float: right;
+ 	font-size: 25px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	cursor:pointer;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;	
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+/*.msg{
+	position: relative;
+	color: #fff;
+	background: transparent;
+	font-size: 22px;
+	text-align: center;
+	margin: 0 auto;
+	display: none;
+	padding: 20px;
+	width:700px;
+
+
+}*/
+
+.thank-you, .msg{
+	display: none;
+	width: 200px;
+	position: absolute;
+	top: 0;
+    padding: 20px;
+    margin: 20px 0;
+    background: rgba(255,255,255,0.8);
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.thank-you{
+	left: calc(50vw - 100px);
+}
+
+
+.msg{
+	width: 700px;
+	background-color: #eee;
+	left: calc(50vw - 350px);
+}
